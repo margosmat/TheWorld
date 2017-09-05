@@ -3,6 +3,9 @@
     "ToAddress": "mateuszczech1@gmail.com"
   },
   "ConnectionStrings": {
-    "WorldContextConnection":  "Server=(localdb)\\MSSQLLocalDB;Database=TheWorldDb;Trusted_Connection=true;MultipleActiveResultSets=true;"
+    "WorldContextConnection": "Server=(localdb)\\MSSQLLocalDB;Database=TheWorldDb;Trusted_Connection=true;MultipleActiveResultSets=true;"
+  },
+  "Keys": {
+    "BingKey":  "DONTEVERPUTKEYSINSOURCECONTROL"
   }
 }
