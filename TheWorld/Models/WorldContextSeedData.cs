@@ -28,7 +28,7 @@ namespace TheWorld.Models
                     Email = "mateuszczech@op.pl"
                 };
 
-                await _userManager.CreateAsync(user, "P@aaw0rd!");
+                await _userManager.CreateAsync(user, "P@ssw0rd!");
             }
 
 
