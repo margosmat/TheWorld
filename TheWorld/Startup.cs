@@ -47,7 +47,7 @@ namespace TheWorld
                 services.AddScoped<IMailService, DebugMailService>();
             } else
             {
-                // Implement a real Mail Service
+                services.AddScoped<IMailService, DebugMailService>();
             }
 
             services.AddDbContext<WorldContext>();
@@ -111,7 +111,9 @@ namespace TheWorld
                 factory.AddDebug(LogLevel.Information);
             } else
             {
-                factory.AddDebug(LogLevel.Error);
+                app.UseDeveloperExceptionPage();
+                factory.AddDebug(LogLevel.Information);
+                //factory.AddDebug(LogLevel.Error);
             }
 
             app.UseStaticFiles();

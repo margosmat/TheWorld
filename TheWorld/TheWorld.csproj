@@ -32,4 +32,10 @@
     <Folder Include="Migrations\" />
   </ItemGroup>
 
+  <Target Name="OurBuild" AfterTargets="Publish">
+    <Exec Command="npm install" />
+    <Exec Command="bower install" />
+    <Exec Command="node node_modules\\gulp\\bin\\gulp.js minify" />
+  </Target>
+
 </Project>
