@@ -111,9 +111,7 @@ namespace TheWorld
                 factory.AddDebug(LogLevel.Information);
             } else
             {
-                app.UseDeveloperExceptionPage();
-                factory.AddDebug(LogLevel.Information);
-                //factory.AddDebug(LogLevel.Error);
+                factory.AddDebug(LogLevel.Error);
             }
 
             app.UseStaticFiles();
